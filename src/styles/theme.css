@@ -1,0 +1,84 @@
+:root {
+  /* Grayscale background layers from pure black to dark gray */
+  --bg-0: #000000;
+  --bg-1: #121212;
+  --bg-2: #1e1e1e;
+  --bg-3: #2a2a2a;
+
+  /* Monochrome Borders & Dividers */
+  --line: #3f3f3f;
+  --line-subtle: #262626;
+
+  /* High-contrast Monochrome Typography */
+  --text-0: #ffffff;
+  --text-1: #cccccc;
+  --text-2: #888888;
+
+  /* Accent Colors (Enhanced Gold & Supporting Tones) */
+  --gold: #f3c258;
+  --gold-hover: #ffd26e;
+  --gold-subtle: rgba(243, 194, 88, 0.12);
+
+  /* Functional Status Colors */
+  --accent-blue: #4f80ff;
+  --accent-green: #36d399;
+  --accent-red: #f87272;
+
+  /* Elevation Shadows & Glows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 15px rgba(243, 194, 88, 0.15);
+
+  /* Typography */
+  --font-display: "Space Grotesk", "Archivo", system-ui, sans-serif;
+  --font-body: "Archivo", system-ui, sans-serif;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-0);
+  background-image: radial-gradient(circle at 15% 0%, rgba(232, 185, 77, 0.06), transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(95, 176, 255, 0.05), transparent 40%);
+  color: var(--text-0);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-3);
+  border-radius: 999px;
+}
